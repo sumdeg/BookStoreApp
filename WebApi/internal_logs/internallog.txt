@@ -109,3 +109,21 @@
 2023-08-26 18:35:27.8461 Info Message Template Auto Format enabled
 2023-08-26 18:35:27.9690 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-08-26 18:35:27.9935 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\User\source\repos\bsStoreApp\WebApi\nlog.config
+2023-08-29 00:52:12.6964 Info Message Template Auto Format enabled
+2023-08-29 00:52:12.8335 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-29 00:52:12.8754 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\User\source\repos\bsStoreApp\WebApi\nlog.config
+2023-08-29 00:53:11.6568 Info Message Template Auto Format enabled
+2023-08-29 00:53:11.8132 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-29 00:53:11.8518 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\User\source\repos\bsStoreApp\WebApi\nlog.config
+2023-08-29 00:54:25.9115 Info Message Template Auto Format enabled
+2023-08-29 00:54:26.1539 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-29 00:54:26.1990 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\User\source\repos\bsStoreApp\WebApi\nlog.config
+2023-08-29 01:33:20.9470 Info Message Template Auto Format enabled
+2023-08-29 01:33:21.0274 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-29 01:33:21.0536 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\User\source\repos\bsStoreApp\WebApi\nlog.config
+2023-08-29 01:35:43.9062 Info Message Template Auto Format enabled
+2023-08-29 01:35:43.9856 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-29 01:35:44.0133 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\User\source\repos\bsStoreApp\WebApi\nlog.config
+2023-08-29 01:44:19.5057 Info Message Template Auto Format enabled
+2023-08-29 01:44:19.5866 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-08-29 01:44:19.6128 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\User\source\repos\bsStoreApp\WebApi\nlog.config
