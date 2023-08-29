@@ -68,6 +68,8 @@ namespace WebApi.Extensions
                 if(systemTextJsonOutputFormatter is not null)
                 {
                     systemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.sum.hateoas+json");
+
+                    systemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.sum.apiroot+json");
                 }
 
                 var xmlOutputFormatter = config.OutputFormatters.OfType<XmlDataContractSerializerOutputFormatter>()?.FirstOrDefault();
@@ -75,6 +77,8 @@ namespace WebApi.Extensions
                 if(xmlOutputFormatter is not null)
                 {
                     xmlOutputFormatter.SupportedMediaTypes.Add("application/vnd.sum.hateoas+xml");
+
+                    xmlOutputFormatter.SupportedMediaTypes.Add("application/vnd.sum.apiroot+xml");
                 }
             });
 
