@@ -45,7 +45,7 @@ namespace WebApi.Migrations
                         {
                             Id = 1,
                             Price = 25m,
-                            Title = "Karagöz ve Hacivat"
+                            Title = "İçimizdeki Şeytan"
                         },
                         new
                         {

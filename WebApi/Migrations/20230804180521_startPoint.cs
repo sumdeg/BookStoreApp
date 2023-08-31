@@ -25,7 +25,7 @@ namespace WebApi.Migrations
             migrationBuilder.InsertData(
                 table: "Books",
                 columns: new[] { "Id", "Price", "Title" },
-                values: new object[] { 1, 25m, "Karagöz ve Hacivat" });
+                values: new object[] { 1, 25m, "İçimizdeki Şeytan" });
 
             migrationBuilder.InsertData(
                 table: "Books",
