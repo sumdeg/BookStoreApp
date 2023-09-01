@@ -3,6 +3,7 @@ using Entities.Exceptions;
 using Entities.Models;
 using Entities.RequestFeatures;
 using Marvin.Cache.Headers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFilters;
 using Services.Contract;
@@ -30,7 +31,7 @@ namespace Presentation.Controllers
             _manager = manager;
         }
 
-
+        [Authorize]
         [HttpHead]
         [HttpGet(Name ="GetAllBooksAsync")]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
@@ -53,6 +54,8 @@ namespace Presentation.Controllers
 
 
         }
+
+        [Authorize]
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetOneBookAsync([FromRoute(Name = "id")] int id)
         {
@@ -62,6 +65,7 @@ namespace Presentation.Controllers
                       
         }
 
+        [Authorize(Roles = "Admin,Editor")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name = "CreateOneBookAsync")]
         public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
@@ -73,7 +77,7 @@ namespace Presentation.Controllers
         
         }
 
-
+        [Authorize(Roles = "Admin,Editor")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
@@ -84,6 +88,7 @@ namespace Presentation.Controllers
           
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteOneBookAsync([FromRoute(Name = "id")] int id)
         {
@@ -92,7 +97,7 @@ namespace Presentation.Controllers
                 return NoContent();        
         }
 
-
+        [Authorize]
         [HttpOptions]
         public IActionResult GetBooksOptions()
         {
