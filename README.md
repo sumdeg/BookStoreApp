@@ -16,7 +16,7 @@ Projede gerçekleştirilen işlemler:
 -Search  
 -Sort    
 -Logging  
--HATEOS implementasyonu  
+-HATEOAS implementasyonu  
 -Versiyonlama işlemleri  
 -Authentication  
 -Authorization 
