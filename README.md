@@ -9,7 +9,7 @@ Katmanlı mimari şu şekildedir:
 -WebApi  
 
 
-Projede gerçekleşen işlemler:  
+Projede gerçekleştirilen işlemler:  
 -CRUD  
 -Pagination  
 -Filter   
